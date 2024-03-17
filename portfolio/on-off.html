@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function on()
+        {
+            document.getElementById("bulb").src='on.jpg'
+        }
+        function off()
+        {
+            document.getElementById("bulb").src='of.jpg'
+        }
+        
+    </script>
+</head>
+<body>
+  <img src="on.jpg" alt="" id="bulb" onmouseover="off()" onmouseout="on()"> 
+  <button type="button" onclick="on()" >ON LIGHT</button>
+  <button type="button" onclick="off()" >OFF LIGHT</button>
+  
+
+</body>
+</html>
